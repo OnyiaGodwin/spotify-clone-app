@@ -1,0 +1,9 @@
+.body {
+  padding: 30px;
+  flex: 0.8; /*this tells the body to use 80% of the flex box 
+                    ** that is set between the body and the sidebar
+                    ** in the Player.module.css*/
+  color: white; /**setting the text color to white*/
+  height: 100vh;
+  background: linear-gradient(transparent, rgb(91, 87, 115));
+}

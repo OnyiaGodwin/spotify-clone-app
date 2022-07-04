@@ -1,0 +1,19 @@
+.login {
+    display: grid;                  /*the display: grid and this place-items*/
+    place-items: center;            /*equally displace things out in the center */                            
+    background-color: black;
+    height: 100vh;                  /*this covers the entire page*/
+}
+
+.login > img {
+    width: 100%;
+}
+
+.login > a{
+    padding: 20px;
+    border-radius: 99px;
+    background-color: #1db954;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;          /*this removes the underline that is seen in an achor tag<a> with link*/
+}

@@ -1,0 +1,66 @@
+.footer {
+  position: fixed; /*Hinders it from moving*/
+  display: flex;
+  justify-content: space-between;
+  bottom: 0; /*Making it to stick at the bottom of the page*/
+  height: 65px;
+  width: 97%; /** makes the footer take the full width */
+  background-color: #282828;
+  padding: 20px;
+}
+
+.footer__left {
+  flex: 0.3;
+  color: white;
+  display: flex;
+  align-items: center; 
+  max-width: 300px;       /*specifys the width of the container to avoid the songs name going from end to end*/
+}
+
+.footer__albumLogo {
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+    object-fit: contain;
+}
+
+.footer__green {
+  color: #1ed15e;
+}
+
+.footer__songInfo > h4 {
+  margin-bottom: 5px;
+}
+
+.footer__songInfo > p {
+  font-size: 12px;
+}
+
+.footer__center {
+  flex: 0.4;
+  padding: 0 100px; /*gives 0 --> top and botton and 100 --> right and left*/
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;                                   
+}
+/*To make the buttons(play, repeat, previous/next) to ease in/out when hovered over we have*/
+.footer__icon:hover,
+.footer__green {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2) !important;
+}
+
+/*To turn the color of the slider to green we have*/
+.footer__right * .MuiSlider-root {
+  color: green;
+}
+
+.footer__right {
+  flex: 0.3;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
