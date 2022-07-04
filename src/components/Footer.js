@@ -1,6 +1,6 @@
 import React from "react";
 
-import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
+import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import SkipNextIcon from "@mui/icons-material/SkipNext";
 import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import ShuffleIcon from "@mui/icons-material/Shuffle";
