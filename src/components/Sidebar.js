@@ -13,7 +13,6 @@ function Sidebar() {
 
   return (
     <div className={classes.sidebar}>
-      Sidebar
       <img
         className={classes.sidebar__logo}
         src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
