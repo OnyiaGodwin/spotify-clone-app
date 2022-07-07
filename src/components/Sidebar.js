@@ -8,7 +8,7 @@ import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import { useDataLayerValue } from "../use-Context/DataLayer";
 
 function Sidebar() {
-  const [{ playlists }] = useDataLayerValue;
+  const [{ playlists }] = useDataLayerValue();
 
 
   return (
@@ -16,7 +16,7 @@ function Sidebar() {
       <img
         className={classes.sidebar__logo}
         src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
-        alt="logo"
+        alt=""
       />
       <SidebarOption title="Home" Icon={HomeIcon}/>
       <SidebarOption title="Search" Icon={SearchIcon}/>
@@ -29,8 +29,8 @@ function Sidebar() {
       {playlists?.items?.map((playlist) => {
         return (
         <SidebarOption title={playlist.name} />
-        );
-      })};
+        )
+      })}
     </div>
   );
 }

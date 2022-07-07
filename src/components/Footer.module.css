@@ -47,7 +47,7 @@
 }
 /*To make the buttons(play, repeat, previous/next) to ease in/out when hovered over we have*/
 .footer__icon:hover,
-.footer__green {
+.footer__green:hover {
   transition: transform 0.2s ease-in-out;
   transform: scale(1.2) !important;
 }

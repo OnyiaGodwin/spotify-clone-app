@@ -9,14 +9,15 @@ import PlaylistPlayIcon from '@mui/icons-material/PlaylistPlay';
 import VolumeDownIcon from '@mui/icons-material/VolumeDown';
 import Grid from '@mui/material/Grid';
 import Slider from '@mui/material/Slider';
+import { useDataLayerValue } from "../use-Context/DataLayer";
 //import { Grid, Slider } from "@mui/material";
 
 import classes from "./Footer.module.css";
 //import { useDataLayerValue } from "../use-Context/DataLayer";
 
 function Footer() {
-  //const [{ playlists }] = useDataLayerValue;
-
+  const [{ playlists }] = useDataLayerValue();
+console.log("this is Playlist:", playlists)
   return (
     <div className={classes.footer}>
       <div className={classes.footer__left}>

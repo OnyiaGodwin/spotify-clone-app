@@ -10,7 +10,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
 function Body({ spotify }) {  //Note how this props(spotify) is passed from <Player> without using props
-  const [{ discover_weekly }, dispatch] = useDataLayerValue;
+  const [{ discover_weekly }, dispatch] = useDataLayerValue();
 
   return (
     <div className={classes.body}>

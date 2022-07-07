@@ -8,7 +8,7 @@ import classes from "./Header.module.css";
 
 
 function Header() {
-    const [{ user }, /*dispatch*/] = useDataLayerValue;
+    const [{ user }, /*dispatch*/] = useDataLayerValue();
 
   return (
     <div className={classes.header}>
